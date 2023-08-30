@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/Script/main.js" defer></script>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted controls  poster="">
+        <source  src = "" type="video/mp4" id="source">
+        <!-- <source  src = "https://static.videezy.com/system/resources/previews/000/042/746/original/Rain_Drops_Falling_Heavy_rainstorm_background._4k_animation_7.mp4" type="video/mp4" id="source"> -->
+        
+      </video>
+      <h1>Weather in <%= city %></h1>
+      <section id="main">
+          <div>
+            <form action="/#" method="post" id="inputForm">
+                <input type="text" name="city" placeholder="Enter your location">
+                <button type="submit" class="btn">OK</button>
+            </form>
+        </div>
+        <section>
+            <div class="temperatureBox">
+                <!-- <p>Temperature : <%= temperature %></p> -->
+                <div class="Maindiv"><h2>Temperature => </h2></div>
+                <div class="Maindiv"><h2><%= temperature %>&deg;C </h2> feels Like <%= feelsLike %> &deg;C</div>
+            </div>
+        </section>
+        <div id="blocks">
+
+            <div class="divMain">
+                <p><h2>Pressure </h2> <%= pressure %></p>
+            </div>
+            <div class="divMain">
+                <p><h2>Humidity </h2>  <%= humidity %></p>
+            </div>
+            <div class="divMain">
+                <p><h2>Visibility </h2> <%= visibility %> meters</p>
+            </div>
+            <div class="divMain">
+                <p><h2>Wind Speed </h2> <%= windSpeed %> Km/hr <p><%= windSpeedDegree %>&deg;</p></p>
+                
+            </div>
+            <div class="divMain">
+                <h2>Weather condition </h2><p id="clouds"> <%= clouds %></p>
+            </div>
+            <div class="divMain">
+                <p><h2>Sun Rise </h2> <%= sunRise %></p>
+                <p><h2>Sun Set </h2> <%= sunSet %></p>
+                
+            </div>
+            
+        </div>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin : 0;
+}
+
+body{
+    /* background: url('https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg' ) no-repeat center center fixed; */
+    /* background: rgb(68, 122, 143); */
+    background-size: cover;
+    
+}
+
+.black{
+    color : black;
+}
+
+
+h1{
+    text-align: center;
+    color:wheat;
+    font-size: 3rem;
+    /* background-color: burlywood; */
+    
+}
+
+p{
+    margin:10px 4px;
+}
+
+
+section{
+    display :flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#blocks{
+    width:100%;
+    /* border:2px solid red; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divMain{
+    border : 2px solid black;
+    width: 20%;
+    height: 25vh;
+    margin: 30px 36px;
+    border-style: outset;
+    /* background: white; */
+    color:white;
+    box-shadow: 3rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#inputForm{
+    display:flex;
+    flex-direction: row;
+}
+
+input{
+    border : 2px solid black;
+    padding: 7px 26px;
+    margin: 7px 2px;
+    border-radius: 12px;
+    background: none;
+    color:white;
+}
+
+::placeholder{
+    color:white;
+}
+
+.btn{
+    /* border: 2px solid black; */
+    background: none;
+    color:white;
+    border-bottom: 2px black;
+    margin : 5px 2px;
+    border-radius: 12px;
+    width: 48px;
+}
+
+.temperatureBox{
+    width:100%;
+    /* border : 2px solid black; */
+    height: 20vh;
+    display :flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+#main{
+    width: 100%;
+    display: grid;
+    grid-column: 2;
+    /* border : 2px solid red; */
+    height: 27.2vh;
+}
+
+
+
+
+.Maindiv{
+    display :block;
+    width: 40%;
+    text-align: center;
+    font-size: 3rem;
+    /* border: 2px solid blueviolet; */
+    margin : 0px 0px;
+    padding: 0px 66px;
+}
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 2;
+    bottom: 0;
+    z-index: -1;
+  }
