@@ -131,3 +131,35 @@ input{
     bottom: 0;
     z-index: -1;
   }
+
+
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+  h1 {
+    font-size: 2rem;
+  }
+
+  .Maindiv {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .divMain {
+    width: 22%;
+    height: 29vh;
+    margin: 10px 29px;
+  }
+
+  #inputForm{
+    justify-content: center;
+  }
+
+  .temperatureBox{
+    height: 10vh;
+  }
+
+  #blocks{
+    align-items: center;
+  }
+}
